@@ -34,9 +34,8 @@ export default function Signup() {
     } catch (error) {
 
       console.log(error.response);
-
-      alert("Signup Failed because of wrong details or user already exists");
-    }
+      console.log(error.response.data);
+alert(error.response.data.detail || "Signup Failed");    }
   };
 
   return (

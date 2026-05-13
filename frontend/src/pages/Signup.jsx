@@ -17,7 +17,7 @@ export default function Signup() {
     try {
 
       const response = await API.post(
-        "/auth/signup",
+        "/signup",
         {
           name: name,
           email: email,
